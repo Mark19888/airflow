@@ -3,7 +3,7 @@ import airflow
 from airflow.operators.python_operator import PythonOperator
 
 with airflow.DAG(
-  "composer_sample_celery_kubernetes",
+  dag_id= "composer_sample_celery_kubernetes",
   start_date=datetime.datetime(2022, 1, 1),
   schedule_interval="@daily") as dag:
 
