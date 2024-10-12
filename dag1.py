@@ -26,4 +26,5 @@ with airflow.DAG(
     python_callable=celery_example,
     dag=dag)
 
-  task_kubernetes >> task_celery
+  task_kubernetes >> task_celery 
+  # 'test'
