@@ -67,7 +67,7 @@ dag2_dataset = Dataset("s3://dag2/output_1.txt", extra={"hi": "bye"})
 dag3_dataset = Dataset("s3://dag3/output_3.txt", extra={"hi": "bye"})
 
 with DAG(
-    dag_id="dataset_produces_1",
+    dag_id="dataset_produces_mz",
     catchup=False,
     start_date=pendulum.datetime(2021, 1, 1, tz="UTC"),
     schedule="@daily",
